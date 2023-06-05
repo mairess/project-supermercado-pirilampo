@@ -1,7 +1,15 @@
 const stockProducts = require('./data.json');
 
 const getProductsAmount = () => {
-  // Desenvolva seu código dentro dessa função...
+  let stockQuantity = 0;
+  for (let index = 0; index < stockProducts.length; index += 1) {
+    if (stockProducts[index].quantityInStock > 0) {
+      stockQuantity += stockProducts[index].quantityInStock;
+    }
+  }
+  return stockQuantity;
 };
+
+console.log(getProductsAmount());
 
 module.exports = { getProductsAmount };
