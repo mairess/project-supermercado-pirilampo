@@ -2,9 +2,6 @@ const stockProducts = require('./data.json');
 
 const getProductsOnSale = () => {
   let newInfos = [];
-  // if (!brand) {
-  //   return newInfos;
-  // }
   for (let index = 0; index < stockProducts.length; index += 1) {
     if (stockProducts[index].onSale) {
       let description = stockProducts[index].description;
