@@ -10,6 +10,6 @@ const getProductsAmount = () => {
   return stockQuantity;
 };
 
-console.log(getProductsAmount());
+getProductsAmount();
 
 module.exports = { getProductsAmount };
