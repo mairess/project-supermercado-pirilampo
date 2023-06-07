@@ -1,12 +1,9 @@
 const stockProducts = require('./data.json');
 
-const getVit = (vitaminsObject) => {
+const getVit = (vitaminsArray) => {
   let vitArray = [];
-  for (let vitamin in vitaminsObject) {
-    if (Object.prototype.hasOwnProperty.call(vitaminsObject, vitamin)) {
-      let value = vitaminsObject[vitamin];
-      vitArray.push(`${vitamin} - ${value}`);
-    }
+  for (let indexGetVit = 0; indexGetVit < vitaminsArray.length; indexGetVit += 1) {
+    vitArray.push(vitaminsArray[indexGetVit].join(' - '));
   }
   return vitArray;
 };
@@ -19,10 +16,10 @@ const getProductsRichInVitamin = () => {
     let price = product.price;
     let formattedPrice = `R$ ${price}`;
     let vitamins = product.nutritionalInfo.vitamins;
-    let vitaminsInformation = getVit(vitamins);
 
     if (vitamins) {
-      getVit();
+      let vitaminsArray = Object.entries(product.nutritionalInfo.vitamins);
+      let vitaminsInformation = getVit(vitaminsArray);
       newInfos.push({ description, formattedPrice, vitaminsInformation });
     }
   }
