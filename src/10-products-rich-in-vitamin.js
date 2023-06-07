@@ -1,26 +1,34 @@
 const stockProducts = require('./data.json');
 
+const getVit = (vitaminsObject) => {
+  let vitArray = [];
+  for (let vitamin in vitaminsObject) {
+    if (Object.prototype.hasOwnProperty.call(vitaminsObject, vitamin)) {
+      let value = vitaminsObject[vitamin];
+      vitArray.push(`${vitamin} - ${value}`);
+    }
+  }
+  return vitArray;
+};
+
 const getProductsRichInVitamin = () => {
   let newInfos = [];
   for (let index = 0; index < stockProducts.length; index += 1) {
-    if (stockProducts[index].nutritionalInfo.vitamins) {
-      let description = stockProducts[index].description;
-      let price = stockProducts[index].price;
-      let formattedPrice = `R$ ${price}`;
-      let vitamArray = stockProducts[index].nutritionalInfo.vitamins;
-      let vitaminsInformation = [];
-      for (let vitamin in vitamArray) {
-        if (Object.prototype.hasOwnProperty.call(vitamArray, vitamin)) {
-          let value = vitamArray[vitamin];
-          vitaminsInformation.push(`${vitamin} - ${value}`);
-        }
-      }
+    let product = stockProducts[index];
+    let description = product.description;
+    let price = product.price;
+    let formattedPrice = `R$ ${price}`;
+    let vitamins = product.nutritionalInfo.vitamins;
+    let vitaminsInformation = getVit(vitamins);
+
+    if (vitamins) {
+      getVit();
       newInfos.push({ description, formattedPrice, vitaminsInformation });
     }
   }
   return newInfos;
 };
 
-getProductsRichInVitamin();
+console.log(getProductsRichInVitamin());
 
 module.exports = { getProductsRichInVitamin };
