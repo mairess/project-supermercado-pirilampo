@@ -29,6 +29,6 @@ const getProductsRichInVitamin = () => {
   return newInfos;
 };
 
-console.log(getProductsRichInVitamin());
+getProductsRichInVitamin();
 
 module.exports = { getProductsRichInVitamin };
