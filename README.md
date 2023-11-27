@@ -2,11 +2,19 @@
 
 ## Objetivo do Projeto
 
-Este projeto é focado na implementação da lógica por meio de funções e lógica de negócios. A responsabilidade principal aqui é criar e desenvolver a parte lógica do sistema. Não serão desenvolvi telas (HTML e CSS) como parte deste escopo, já que essa responsabilidade em nossa simulação pertence ao time de front-end. Os aqurivos com as funções se encontram em `src/`.
+Neste projeto, minha responsabilidade foi o desenvolvimento de funções que desempenham um papel crucial na implementação das regras de negócio de um site de supermercado, o Pirilampo. As funcionalidades estão relacionadas à manipulação e busca de produtos em estoque.
+
+Este projeto é focado na implementação da lógica por meio de funções e lógica de negócios. A responsabilidade principal aqui é criar e desenvolver a parte lógica do sistema. Não desenvolvi telas (HTML e CSS) já que essa responsabilidade nesta simulação, pertence ao time de front-end. Os aqurivos com as funções se encontram em `src/`.
+
+### Tarefas Envolvidas
+
+- **Manipulação de Produtos:** Desenvolvi funções que permitem a adição e remoção de produtos no estoque, mantendo a consistência e integridade dos dados.
+
+- **Busca no Estoque:** Implementei funções que facilitam a busca de produtos com base em critérios específicos, proporcionando uma experiência de usuário eficiente.
 
 ## Habilidades Demonstradas
 
-Neste projeto, foram aplicadas as seguintes habilidades:
+Neste projeto, apliquei as seguintes habilidades:
 
 - **Variáveis e Tipos de Dados:** Utilização de variáveis e tipos de dados para representar e armazenar informações.
 
