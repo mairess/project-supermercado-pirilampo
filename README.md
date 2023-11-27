@@ -1,4 +1,4 @@
-# <p align="center">Meu primerio Projeto Supermercado Pirilampo</p>
+# <p align="center">Projeto Supermercado Pirilampo</p>
 
 ## Objetivo do Projeto
 
