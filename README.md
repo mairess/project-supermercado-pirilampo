@@ -1,31 +1,19 @@
 # <p align="center">Projeto Supermercado Pirilampo</p>
 
-## Objetivo do Projeto
+## Contexto
 
-Neste projeto, minha responsabilidade foi o desenvolvimento de funções que desempenham um papel crucial na implementação das regras de negócio de um site de supermercado, o Pirilampo. As funcionalidades estão relacionadas à manipulação e busca de produtos em estoque.
+Neste projeto, minha responsabilidade foi o desenvolvimento de funções para um site de supermercado, o Pirilampo. As funcionalidades que foram criadas no diretório `src`, estão relacionadas à manipulação e busca de produtos em estoque. Não desenvolvi telas (HTML e CSS) já que essa responsabilidade nesta simulação, pertence ao time de front-end.
 
-Este projeto é focado na implementação da lógica por meio de funções e lógica de negócios. A responsabilidade principal aqui é criar e desenvolver a parte lógica do sistema. Não desenvolvi telas (HTML e CSS) já que essa responsabilidade nesta simulação, pertence ao time de front-end. Os aqurivos com as funções se encontram em `src/`.
+## Competências desenvolvidas
 
-### Tarefas Envolvidas
+- Utilizar de variáveis e tipos de dados para representar e armazenar informações.
 
-- **Manipulação de Produtos:** Desenvolvi funções que permitem a adição e remoção de produtos no estoque, mantendo a consistência e integridade dos dados.
+- Manipular listas de elementos usando arrays.
 
-- **Busca no Estoque:** Implementei funções que facilitam a busca de produtos com base em critérios específicos, proporcionando uma experiência de usuário eficiente.
+- Representar informações estruturada usando objetos.
 
-## Habilidades Demonstradas
+- Utilizar estruturas como `for` para percorrer listas de dados.
 
-Neste projeto, apliquei as seguintes habilidades:
+- Implementar condições lógicas utilizando `if...else` nas regras de negócio.
 
-- **Variáveis e Tipos de Dados:** Utilização de variáveis e tipos de dados para representar e armazenar informações.
-
-- **Arrays:** Manipulação de listas de elementos usando arrays.
-
-- **Objetos:** Representação estruturada de informações utilizando objetos.
-
-- **Estruturas de Controle:** Utilização de estruturas de controle, como `for` para percorrer listas de dados.
-
-- **Condições Lógicas:** Implementação de condições lógicas utilizando `if...else` nas regras de negócio.
-
-- **Lógica de Programação:** Aplicação de lógica de programação para resolver problemas específicos.
-
-Estas habilidades foram essenciais para o desenvolvimento e execução bem-sucedida deste projeto.
+- Aplicar lógica de programação para resolver problemas específicos.
